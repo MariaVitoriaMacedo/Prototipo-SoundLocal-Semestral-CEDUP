@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucasfagunda.semestral.NovoEventoController">
+   <children>
+      <Label layoutX="254.0" layoutY="14.0" text="Nome do Evento" />
+      <Label layoutX="252.0" layoutY="56.0" text="Gênero do Evento" />
+      <Label layoutX="247.0" layoutY="98.0" text="Descrição do Evento" />
+      <Label layoutX="243.0" layoutY="192.0" text="Data do Evento Inicio" />
+      <Label layoutX="242.0" layoutY="278.0" text="Hora do Evento Inicio" />
+      <TextField fx:id="nomeEventoTextField" layoutX="225.0" layoutY="31.0" />
+      <TextField fx:id="generoEventoTextField" layoutX="226.0" layoutY="73.0" />
+      <TextArea fx:id="descricaoEventoTextArea" layoutX="200.0" layoutY="115.0" prefHeight="74.0" prefWidth="200.0" />
+      <TextField fx:id="horaEventoInicioTextField" layoutX="227.0" layoutY="295.0" />
+      <Button layoutX="481.0" layoutY="161.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <Button layoutX="474.0" layoutY="192.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <CheckBox fx:id="eventoPrincipalCheckBox" layoutX="40.0" layoutY="353.0" mnemonicParsing="false" text="Evento Principal" />
+      <Label layoutX="240.0" layoutY="320.0" text="Hora do Evento Fim" />
+      <TextField fx:id="horaEventoFimTextField" layoutX="225.0" layoutY="337.0" />
+      <TextField fx:id="dataEventoInicioTextField" layoutX="226.0" layoutY="209.0" />
+      <Label layoutX="250.0" layoutY="234.0" text="Data do Evento Fim" />
+      <TextField fx:id="dataEventoFimTextField" layoutX="227.0" layoutY="251.0" />
+   </children>
+</AnchorPane>

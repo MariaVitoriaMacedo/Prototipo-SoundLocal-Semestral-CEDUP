@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lucasfagunda.semestral.SubEventoController">
+   <children>
+      <Label layoutX="51.0" layoutY="24.0" text="Nome do Evento" />
+      <Label layoutX="223.0" layoutY="24.0" text="Gênero do Evento" />
+      <Label layoutX="69.0" layoutY="80.0" text="Descrição do Evento" />
+      <Label layoutX="269.0" layoutY="80.0" text="Data do Evento Inicio" />
+      <Label layoutX="441.0" layoutY="80.0" text="Hora do Evento Inicio" />
+      <TextField fx:id="nomeEventoTextField" layoutX="22.0" layoutY="41.0" />
+      <TextField fx:id="generoEventoTextField" layoutX="197.0" layoutY="41.0" />
+      <TextArea fx:id="descricaoEventoTextArea" layoutX="22.0" layoutY="97.0" prefHeight="74.0" prefWidth="200.0" />
+      <TextField fx:id="horaEventoInicioTextField" layoutX="426.0" layoutY="97.0" />
+      <Label layoutX="448.0" layoutY="122.0" text="Hora do Evento Fim" />
+      <TextField fx:id="horaEventoFimTextField" layoutX="424.0" layoutY="139.0" />
+      <TextField fx:id="dataEventoInicioTextField" layoutX="252.0" layoutY="97.0" />
+      <Label layoutX="276.0" layoutY="122.0" text="Data do Evento Fim" />
+      <TextField fx:id="dataEventoFimTextField" layoutX="253.0" layoutY="139.0" />
+      <TableView fx:id="subEventoTableView" layoutX="22.0" layoutY="186.0" prefHeight="200.0" prefWidth="462.0">
+        <columns>
+          <TableColumn fx:id="nomeColumn" maxWidth="2000.0" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="dataColumn" maxWidth="1500.0" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="descricaoColumn" prefWidth="75.0" text="Descrição" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="520.0" layoutY="189.0" mnemonicParsing="false" onAction="#adicionar" text="Adicionar" />
+      <Button layoutX="528.0" layoutY="225.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+      <Button layoutX="526.0" layoutY="260.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+      <Button layoutX="528.0" layoutY="309.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <Button layoutX="526.0" layoutY="352.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+   </children>
+</AnchorPane>
